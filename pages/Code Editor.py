@@ -1,6 +1,10 @@
 import streamlit as st
 import pseudointerpreter
 import time
+import pandas as pd
+
+if 'time_array' not in st.session_state:
+    st.session_state.time_array = [0]
 
 col1, col2, col3 = st.columns([0.5,0.2,0.3], gap="small")
 
@@ -40,9 +44,17 @@ def runcode():
 
     end_time = time.perf_counter()
     time_taken = (end_time-start_time)*1000
+    if len(st.session_state.time_array)<10:
+        st.session_state.time_array.append(time_taken)
+    else:
+        del(st.session_state.time_array[0])
+        st.session_state.time_array.append(time_taken)
     with col3:
         "---"
         st.markdown("**Time taken:**"+" "+str(round(time_taken,3))+"ms")
+        time_data = pd.DataFrame(st.session_state.time_array)
+        st.line_chart(time_data,y_label="Run Time",height = 200)
+
 
 with col2:
     st.button("Run", type="primary", on_click = runcode)
