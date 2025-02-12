@@ -1,0 +1,13 @@
+add errors for keywords not being in uppercase
+add error for repeated variable names (regardless of case)
+start and end seems a bit off for undeclared error? (minor issue)
+change the 1s and 0s in boolean to true and false --> add new data type for booleans
+errors seem to be wrong for incorrect syntax for IF errors
+seems like if comparisons don't work
+add CASE statements
+add steps back into for loops
+add functions in and make sure they work
+add repeat until
+add 2D arrays
+add file handling
+NOT doesn't work

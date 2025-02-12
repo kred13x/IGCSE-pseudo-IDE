@@ -1,0 +1,10 @@
+expr : IDENTIFIER ASSIGN/EQUAL expr
+expr : comp-expr logical expressions comp-expr
+
+comp-expr : NOT comp-expr
+comp-expr : arith-expr comparison arith-expr
+
+arith-expr : term ((PLUS/MINUS) term
+
+FOR count <- 1 TO 10 result result + i NEXT count
+WHILE DO ENDWHILE
