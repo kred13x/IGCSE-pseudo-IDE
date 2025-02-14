@@ -1,65 +1,44 @@
 import streamlit as st
 
+
 st.subheader("Documentation")
+st.markdown('''You can access tutorials on how to use this website and on writing IGCSE pseudocode here!''')
+st.markdown("")
 
-with st.expander("1. Declaring and Assigning Variables"):
-    st.markdown('''
-**DECLARING AND ASSIGNING VARIABLES**
+def readfile(fn):
+    full_fn = 'documentation/'+fn+'.txt'
+    with open(full_fn,'r') as file:
+        return file.read()
 
-In IGCSE pseudocode, all variables must be declared before being used. Declaration statements are usually all done at the very beginning of the program, and essentially create empty variables. They are done in this format:
+st.markdown("**Using this IDE**")
 
-\tDECLARE <variable name> : <DATA TYPE>
+#using an expander to make the documentation drop-down
+with st.expander("Using the command line"):
+    st.markdown(readfile('CommandLine'))
 
-This pseudocode interpreter currently supports the data types INT (INTEGER is also accepted), REAL, STRING and BOOLEAN.
+with st.expander("Using the code editor"):
+    st.markdown(readfile('CodeEditor'))
 
-This means you can create declaration statements like:
+with st.expander("Using the Python converter"):
+    st.markdown(readfile('PythonConverter'))
 
-\tDECLARE num1 : REAL
-\tDECLARE name : STRING
+st.markdown("")
+st.markdown('''**Writing IGCSE Pseudocode**''')
 
-Once you have a variable declared, you can assign a value to it. This is done in this format:
+with st.expander("Declaring and assigning variables"):
+    st.markdown(readfile('DeclareAssignVar'))
 
-\t<variable name> ← <value> (In this pseudocode interpreter, the ‘←’ symbol should be typed as ‘<-’)
+with st.expander("Output statements"):
+    st.markdown(readfile('OutputStatements'))
 
-Make sure that the given value aligns with the declared data type. With declaration and assignment statements, you can create a simple program such as this:
+with st.expander("Arithmetic expressions"):
+    st.markdown(readfile('ArithExpr'))
 
-\tDECLARE height : REAL
-\tDECLARE age : INTEGER
-\tDECLARE name : STRING
+with st.expander("Comparison expressions"):
+    st.markdown(readfile('CompExpr'))
 
-\theight ← 165.2
-\tage ← 19
-\tname ← “Amy”
-    ''')
+with st.expander("Logic expressions"):
+    st.markdown(readfile('LogicExpr'))
 
-with st.expander("2. If statements"):
-    st.markdown('''
-**IF STATEMENTS**
-
-IF statements in IGCSE pseudocode executes certain line(s) of code if a condition is met. They are formatted as so:
-
-\tIF <condition> THEN <statement> ENDIF
-
-Or, if you want to execute multiple statements:
-
-\tIF <condition> THEN
-\t\t<statement 1>
-\t\t<statement 2>
-\t\t<statement 3>
-\tENDIF
-
-IF statements may also include an ELSE case. The ELSE case will be executed if the condition is not met. With the ELSE statement, you can nest another IF statement inside to check multiple conditions. With these methods, you can create a program like this:
-
-\tIF grade >= 80 THEN
-\t\tOUTPUT “You got an A!”
-\tENDIF
-\tELSE IF grade >= 70 THEN
-\t\tOUTPUT “You got a B!”
-\tENDIF
-\tELSE IF grade >= 60 THEN
-\t\tOUTPUT “You got a C!”
-\tENDIF
-\tELSE
-\t\tOUTPUT “You failed :(“
-\tENDIF
-    ''')
+with st.expander("If statements"):
+    st.markdown(readfile('IfStatements'))
