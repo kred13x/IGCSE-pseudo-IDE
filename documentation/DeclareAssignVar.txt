@@ -1,0 +1,26 @@
+**DECLARING AND ASSIGNING VARIABLES**
+
+In IGCSE pseudocode, all variables must be declared before being used. Declaration statements are usually all done at the very beginning of the program, and essentially create empty variables. They are done in this format:
+
+	DECLARE <variable name> : <DATA TYPE>
+
+This pseudocode interpreter currently supports the data types INT (INTEGER is also accepted), REAL, STRING and BOOLEAN.
+
+This means you can create declaration statements like:
+
+	DECLARE num1 : REAL
+	DECLARE name : STRING
+
+Once you have a variable declared, you can assign a value to it. This is done in this format:
+
+	<variable name> ← <value> (In this pseudocode interpreter, the ‘←’ symbol should be typed as ‘<-’)
+
+Make sure that the given value aligns with the declared data type. With declaration and assignment statements, you can create a simple program such as this:
+
+	DECLARE height : REAL
+	DECLARE age : INTEGER
+	DECLARE name : STRING
+
+	height ← 165.2
+	age ← 19
+	name ← “Amy”

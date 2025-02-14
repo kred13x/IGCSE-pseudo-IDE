@@ -1,0 +1,15 @@
+**USING THE COMMAND LINE**
+
+The command line allows you to enter singular lines of code. Try entering this in the text box at the bottom of the screen:
+
+	OUTPUT “hello world”
+
+The command line keeps track of previous lines of code, allowing you to build up on previous lines. Try entering these three lines in this order:
+
+	DECLARE a : INT
+	a <- 10
+	OUTPUT a + 3
+
+For longer programs, though, it is recommended to use the code editor, which allows you to input multiple lines.
+
+To delete all previous code in the command line, press the button at the top!

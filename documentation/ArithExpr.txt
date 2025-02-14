@@ -1,0 +1,12 @@
+**ARITHMETIC EXPRESSIONS**
+
+Arithmetic expressions are basically just math equations. This IDE supports the following operators:
+
+	+ (addition)
+	- (subtraction)
+	* (multiplication)
+	/ (division)
+
+You can also create more complicated expressions with parentheses, like this:
+
+	OUTPUT 4*8+(3-2)

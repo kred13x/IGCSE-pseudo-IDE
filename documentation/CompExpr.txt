@@ -1,0 +1,16 @@
+**COMPARISON EXPRESSIONS**
+
+Comparison expressions check whether a given expression is true or false. This IDE supports the following comparison operators:
+
+	= (equal)
+	> (greater than)
+	< (less than)
+	>= (greater or equal than)
+	<= (less or equal than)
+	!= (not equal to)
+
+Try entering this into the command line:
+	
+	2<5
+
+This will output **TRUE** as 2 is less than 5!

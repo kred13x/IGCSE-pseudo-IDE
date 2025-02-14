@@ -1,0 +1,5 @@
+**USING THE PYTHON CONVERTER**
+
+The Python converter allows you to convert multiple lines of pseudocode into Python code. Enter your pseudocode in the text box on the left and click the convert button to output your code in Python syntax!
+
+You can also download your converted code as a Python file. There’s a text box to name your file before you download, otherwise the default name will be used. Once it’s downloaded, feel free to use any Python IDE to run your program!

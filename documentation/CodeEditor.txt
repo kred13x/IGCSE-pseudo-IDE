@@ -1,0 +1,5 @@
+**USING THE CODE EDITOR**
+
+The code editor allows you to run multiple lines of code. Simply write your pseudocode in the text box on the left and click the ‘run’ button for the results to be output on the right!
+
+Along with your results, the run time needed to execute your pseudocode will be output, along with a line graph of your last 10 run times. This allows you to easily check and compare how efficiently your program is running!

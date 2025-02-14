@@ -1,0 +1,25 @@
+**OUTPUT STATEMENTS**
+
+OUTPUT statements simply print out a given statement. They are formatted as so:
+
+	OUTPUT <statement>
+
+You can output simple statements, such as:
+
+	OUTPUT 5
+	OUTPUT “hello!”
+
+You can also output arithmetic expressions, such as:
+
+	OUTPUT 3+3
+	OUTPUT “hello” + “world”
+
+This will output the result of the expression (e.g. OUTPUT 3+3 will output 6)!
+
+You can also output variables! Here’s a full program to demonstrate this.
+
+	DECLARE a : INT
+	a <- 5
+	OUTPUT a*a
+
+This will output 25.

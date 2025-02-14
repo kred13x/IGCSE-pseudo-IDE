@@ -1,0 +1,28 @@
+**IF STATEMENTS**
+
+IF statements in IGCSE pseudocode executes certain line(s) of code if a condition is met. They are formatted as so:
+
+	IF <condition> THEN <statement> ENDIF
+
+Or, if you want to execute multiple statements:
+
+	IF <condition> THEN
+		<statement 1>
+		<statement 2>
+		<statement 3>
+	ENDIF
+
+IF statements may also include an ELSE case. The ELSE case will be executed if the condition is not met. With the ELSE statement, you can nest another IF statement inside to check multiple conditions. With these methods, you can create a program like this:
+
+	IF grade >= 80 THEN
+		OUTPUT “You got an A!”
+	ENDIF
+	ELSE IF grade >= 70 THEN
+		OUTPUT “You got a B!”
+	ENDIF
+	ELSE IF grade >= 60 THEN
+		OUTPUT “You got a C!”
+	ENDIF
+	ELSE
+		OUTPUT “You failed :(“
+	ENDIF
