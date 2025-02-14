@@ -1,0 +1,29 @@
+**LOGIC EXPRESSIONS**
+
+Logic expressions return either **TRUE** or **FALSE**. This IDE supports the following logic operators:
+
+	AND
+	OR
+	NOT
+
+The **AND** operator returns **TRUE** if expressions on either side of the operator are true. For example:
+
+	2>1 AND 2<3
+
+This will return **TRUE**.
+
+	2>5 AND 2<3
+
+This will return **FALSE**.
+
+The **OR** operator returns **TRUE** if one of the expressions on either side of the operator is true. For example:
+
+	1=1 OR 1>8
+
+This will return **TRUE**, as 1=1 is TRUE even though 1>8 is **FALSE**.
+
+The **NOT** operator reverses the **TRUE/FALSE** of the statement and is put at the front of an expression. For example:
+
+	NOT 1=1
+
+This will return **FALSE** as 1=1 is **TRUE** and the **NOT** operator reverses that.
