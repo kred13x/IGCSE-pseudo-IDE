@@ -16,7 +16,7 @@ def convertcode():
 with col2:
     st.button("Convert to Python!", type="primary", on_click = convertcode)
     name = st.text_input("Enter a file name here before downloading:","pythoncode")
-    file = open("python.txt",'r')
+    file = open("pythonc3xuVn9b.txt",'r')
     st.download_button("Download your code as Python!", file, file_name=name+".py")
     file.close()
 
