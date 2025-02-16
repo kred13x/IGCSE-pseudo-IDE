@@ -136,14 +136,14 @@ def output():
     #reads from the file and returns its contents
     #streamlit has a specific formatting for displaying text on the website
     #so printing immediately here will not be shown on the webiste
-    with open("python.txt",'r') as file:
+    with open("pythonc3xuVn9b.txt",'r') as file:
         return file.read()
 
 #the file handling and writing is done in a singular function, making it easier for the user interface file to call
 def file_and_convert(text):
     #if python.txt doesn't exist yet, creates a new file
     #all python code is written to this file
-    file = open("python.txt", "w")
+    file = open("pythonc3xuVn9b.txt", "w")
     tok_list = scan(text)
     convert(tok_list,file)
     file.close()
